@@ -1,0 +1,264 @@
+* {
+    font-family: arial;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.form_login {
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+    background-color: white;
+    border: 2px solid;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.form_login h1 {
+    width: 40%;
+    font-size: 1.5em;
+    margin: 20px auto;
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 15px;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 15px auto;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    width: 40%;
+    padding: 10px;
+    margin: 10px 0 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.nav {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.nav h1 {
+    margin: 10px;
+    width: 15%;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.6em;
+}
+
+.navbar {
+    text-align: right;
+    list-style: none;
+    width: 81%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    color: black;
+    text-align: center;
+    width: 110px; 
+    border: 2px solid;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px 20px;
+    display: inline-block;
+}
+.about_landing{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 150px;
+    margin: 80px auto 20px auto;
+    border: 2px solid;
+    border-radius: 10px;
+}
+.about_landing_isi{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about_landing_text{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    width: 65%;
+}
+.about_portofolio{
+    width: 80%;
+    height: 100vh;
+    margin: 0px auto;
+    border: 2px solid;
+    border-radius: 8px;
+}
+.gambar123{
+    width: 97%;
+    height: 100vh;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.gambar16{
+    margin-top: 0.2%;
+    width: 50%;
+    height: 95vh;
+    margin-right: 1.5%;
+    float: left;
+}
+.gambar1{
+    margin-top: 0.2%;
+    width: 100%;
+    height: 46vh;
+    border: 2px solid;
+    border-radius: 8px;
+    margin-right: 1.5%;
+    float: left;
+}
+.gambar6{
+    margin-top:20px;
+    width: 100%;
+    height: 46vh;
+    border: 2px solid;
+    border-radius: 8px;
+    margin-right: 1.5%;
+    float: left;
+}
+.gambar23{
+    margin-top: 0.2%;
+    width: 48.5%;
+    height: 95vh;
+}
+.gambar2{
+    width: 100%;
+    height: 25vh;
+    border: 2px solid;
+    border-radius: 8px;
+}
+.gambar3{
+    float: left;
+    margin: 20px 0 20px 0;
+    width: 48.5%;
+    height: 40vh;
+    border: 2px solid;
+    border-radius: 8px;
+}
+.gambar4{
+    float: right;
+    margin: 20px 0 20px 0;
+    width: 48.5%;
+    height: 40vh;
+    border: 2px solid;
+    border-radius: 8px;
+}
+.gambar5{
+    float: left;
+    width: 100%;
+    height: 25vh;
+    border: 2px solid;
+    border-radius: 8px;
+}
+.copyright{
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+input:hover,
+button:hover{
+    border: 2px solid;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.form_login:hover{
+    box-shadow: 8px 10px grey;
+}
+.navbar li:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 678px) {
+    .form_login {
+        width: 90%; 
+    }
+    .nav h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar li {
+        width: 20%; /* Lebar li menyesuaikan konten di dalamnya */
+        margin: 5px 5px 20px 5px;
+        padding: 5px 10px; /* Mengurangi padding pada layar kecil */
+    }
+    .about_landing{
+        margin-top: 120px;
+        height: 200px;
+    }
+    .about_landing_text{
+        width: 60%;
+    }
+    .about_portofolio{
+        width: 82%;
+        border: none;
+    }
+    .gambar16{
+        width: 100%;
+        margin: 0;
+    }
+    .gambar1, .gambar6{
+        width: 100%;
+    }
+    .gambar23{
+        width: 100%;
+        margin: 0;
+    }
+    .gambar2{
+        width: 100%;
+        margin: 15px auto 0 auto;
+    }
+    .copyright{
+        display: none;
+    }
+}
